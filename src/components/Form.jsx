@@ -78,8 +78,8 @@ const Form = () => {
   }
 
   return (
-    <div className='text-white mt-24 pb-24 pt-5 scroll-smooth'>
-        <form className='w-screen'>
+    <div className='text-white mt-24 pb-24 pt-5 scroll-smooth xl:mx-96 xl:my-10'>
+        <form className='w-screen xl:w-full'>
             <FormInput type="fname" function={handleFname} placeholder="First Name"/>
             <FormInput type="lname" function={handleLname} placeholder="Last Name"/>
             <FormInput type="regnum" function={handleRegnum} placeholder="Registration Number"/>
