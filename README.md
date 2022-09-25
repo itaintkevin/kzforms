@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# KzForms - Task for SRMKZILLA Recruitment.
+- The project design is optimized for mobile devices.
+- It contains a form that accepts Applicant details and sends a POST Request to a dummy API (Application Programming Interface).
+- API Endpoint used in this project is https://jsonplaceholder.typicode.com/posts .
+- Upon response the website redirects the user to a new page where the user details are listed.
+- I have also created a custom API at https://puce-vivacious-seahorse.cyclic.app/applicants .
+- Github Repo Link at https://github.com/itaintkevin/kzforms-api .
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tech Stack and Dependencies
+- React.js
+- Tailwind CSS
+- Axios 
+- React Router v6 
+- React Icons
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## File and Folder Structure 
+- Bootstraped by "create-react-app" command.
+- Components folder contains the following files :
+  - Hero.jsx - Hero Page of the application.
+  - FormInput.jsx - Form structure was created.
+  - Form.jsx - FormInput was imported as a component and props were passed for the values.
+  - FormDetais.jsx - Lists the details entered by the applicant.
+  
+## Deployment Link
+- https://kzforms22.vercel.app
+- Screenshots
+- ![image](https://user-images.githubusercontent.com/88616188/192154466-6bcb043c-a805-4945-9b11-34c3da79ccb9.png)
+- ![image](https://user-images.githubusercontent.com/88616188/192154524-1ec5d427-37dc-4bbe-9810-a4522a10b5f1.png)
+- ![image](https://user-images.githubusercontent.com/88616188/192154624-dd4a0024-5cc1-4399-9514-63c2e3af46aa.png)
+- ![image](https://user-images.githubusercontent.com/88616188/192154639-a18c8aa2-b411-4417-9f59-1599d434ed40.png)
