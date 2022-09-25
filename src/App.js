@@ -1,11 +1,14 @@
 import Hero from './components/Hero.jsx';
-import Form from './components/Form.jsx';
+import FormDetails from './components/FormDetails.jsx';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className='w-screen bg-svgbg'>
-      <Hero />
-      <Form />
+      <Routes>
+        <Route path="/" element={<Hero />}/>
+        <Route path="/successfull" element={<FormDetails />}/>
+      </Routes>
     </div>
   );
 }

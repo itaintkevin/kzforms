@@ -1,9 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import FormInput from './FormInput';
+import FormDetails from './FormDetails';
 import axios from 'axios';
+export let firstname = "";
+export let lastname = "";
+export let regnumber = "";
+export let emailid = "";
+export let githubprofile = "";
+export let course1 = "";
+export let year1 = "";
 
 const Form = () => {
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = `successfull`; 
+    navigate(path);
+  }
+
   const [fname, setFname] = useState('');
   const [lname, setLname] = useState('');
   const [regnum, setRegnum] = useState('');
@@ -34,9 +49,17 @@ const Form = () => {
     setYear(e.target.value)
   }
 
+  firstname = fname;
+  lastname = lname;
+  regnumber = regnum;
+  emailid = email;
+  githubprofile = github;
+  course1 = course;
+  year1 = year;
+
   const handleApi = () => {
     console.log({ fname, lname, regnum, email, github, course, year })
-    axios.post('https://puce-vivacious-seahorse.cyclic.app/applicants', {
+    axios.post('https://jsonplaceholder.typicode.com/posts', {
       fname: fname,
       lname: lname,
       regnum: regnum,
@@ -46,9 +69,11 @@ const Form = () => {
       year: year
     })
     .then((response) => {
-      console.log(response.data)
+      console.log(response.data);
+      alert("Your Data has been saved successfully!")
     })
     .catch((error) => {
+      alert("Error, Please fill again!")
     })
   }
 
@@ -63,11 +88,11 @@ const Form = () => {
             <FormInput type="course" function={handleCourse} placeholder="Course"/>
             <FormInput type="year" function={handleYear} placeholder="Year"/>
             <div className='from-[#FB5A0D] to-[#EB144C] text-white text-center text-xl font-semibold bg-gradient-to-r drop-shadow-2xl rounded-md mx-5 px-5 py-2'>
-              <button type="submit" onClick={handleApi}>Sumbit</button>
+              <button type="submit" onClick={()=>{handleApi(); routeChange();}}>Sumbit</button>
             </div>
         </form>
     </div>
   )
 }
 
-export default Form
+export default Form;
