@@ -88,7 +88,7 @@ const Form = () => {
             <FormInput type="course" function={handleCourse} placeholder="Course"/>
             <FormInput type="year" function={handleYear} placeholder="Year"/>
             <div className='from-[#FB5A0D] to-[#EB144C] text-white text-center text-xl font-semibold bg-gradient-to-r drop-shadow-2xl rounded-md mx-5 px-5 py-2'>
-              <button type="submit" onClick={()=>{handleApi(); routeChange();}}>Sumbit</button>
+              <button type="submit" onClick={()=>{handleApi(); routeChange();}}>Submit</button>
             </div>
         </form>
     </div>
